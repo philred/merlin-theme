@@ -3,7 +3,7 @@
 /**
  * Add body classes if certain regions have content.
  */
-function mospace_theme_preprocess_html(&$variables) {
+function merlin_theme_preprocess_html(&$variables) {
   if (!empty($variables['page']['featured'])) {
     $variables['classes_array'][] = 'featured';
   }
@@ -34,7 +34,7 @@ function mospace_theme_preprocess_html(&$variables) {
 /**
  * Override or insert variables into the page template for HTML output.
  */
-function mospace_theme_process_html(&$variables) {
+function merlin_theme_process_html(&$variables) {
   // Hook into color.module.
   if (module_exists('color')) {
     _color_html_alter($variables);
@@ -44,7 +44,7 @@ function mospace_theme_process_html(&$variables) {
 /**
  * Override or insert variables into the page template.
  */
-function mospace_theme_process_page(&$variables) {
+function merlin_theme_process_page(&$variables) {
   // Hook into color.module.
   if (module_exists('color')) {
     _color_page_alter($variables);
@@ -81,7 +81,7 @@ function mospace_theme_process_page(&$variables) {
 /**
  * Implements hook_preprocess_maintenance_page().
  */
-function mospace_theme_preprocess_maintenance_page(&$variables) {
+function merlin_theme_preprocess_maintenance_page(&$variables) {
   // By default, site_name is set to Drupal if no db connection is available
   // or during site installation. Setting site_name to an empty string makes
   // the site and update pages look cleaner.
@@ -95,7 +95,7 @@ function mospace_theme_preprocess_maintenance_page(&$variables) {
 /**
  * Override or insert variables into the maintenance page template.
  */
-function mospace_theme_process_maintenance_page(&$variables) {
+function merlin_theme_process_maintenance_page(&$variables) {
   // Always print the site name and slogan, but if they are toggled off, we'll
   // just hide them visually.
   $variables['hide_site_name']   = theme_get_setting('toggle_name') ? FALSE : TRUE;
@@ -113,7 +113,7 @@ function mospace_theme_process_maintenance_page(&$variables) {
 /**
  * Override or insert variables into the node template.
  */
-function mospace_theme_preprocess_node(&$variables) {
+function merlin_theme_preprocess_node(&$variables) {
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
   }
@@ -122,7 +122,7 @@ function mospace_theme_preprocess_node(&$variables) {
 /**
  * Override or insert variables into the block template.
  */
-function mospace_theme_preprocess_block(&$variables) {
+function merlin_theme_preprocess_block(&$variables) {
   // In the header region visually hide block titles.
   if ($variables['block']->region == 'header') {
     $variables['title_attributes_array']['class'][] = 'element-invisible';
@@ -132,14 +132,14 @@ function mospace_theme_preprocess_block(&$variables) {
 /**
  * Implements theme_menu_tree().
  */
-function mospace_theme_menu_tree($variables) {
+function merlin_theme_menu_tree($variables) {
   return '<ul class="menu clearfix">' . $variables['tree'] . '</ul>';
 }
 
 /**
  * Implements theme_field__field_type().
  */
-function mospace_theme_field__taxonomy_term_reference($variables) {
+function merlin_theme_field__taxonomy_term_reference($variables) {
   $output = '';
 
   // Render the label, if it's not hidden.
