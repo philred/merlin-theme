@@ -1,5 +1,5 @@
-name = MOspace Theme
-description = A subtheme of Bartik, built for University of Missouri System MOspace
+name = Digital Library Theme
+description = A subtheme of Bartik, built for University of Missouri System Digital Library
 package = Core
 version = VERSION
 core = 7.x
