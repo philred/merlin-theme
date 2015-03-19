@@ -513,7 +513,7 @@ h1#site-name {
   text-decoration: none;
 }
 #main-menu-links a:focus {
-  background: #f6f6f2;
+  background: #6DA6E2;
 }
 #main-menu-links a:active {
   background-position: 0% -84px;
