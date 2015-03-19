@@ -486,43 +486,43 @@ h1#site-name {
   font-size: 0.929em;
   margin: 0;
   padding: 0 15px;
+	border-bottom: 1px solid #2763A5;
+	color: #6DA6E2;
 }
 #main-menu-links li {
-  float: left; /* LTR */
+  float: right; /* LTR */
   list-style: none;
   padding: 0 1px;
   margin: 0 1px;
 }
 #main-menu-links a {
-  color: #333;
-  background: #ccc;
-  background: rgba(255, 255, 255, 0.7);
-  float: left; /* LTR */
-  height: 2.4em;
-  line-height: 2.4em;
-  padding: 0 0.8em;
-  text-decoration: none;
-  text-shadow: 0 1px #eee;
-  -khtml-border-radius-topleft: 8px;
-  -khtml-border-radius-topright: 8px;
-  -moz-border-radius-topleft: 8px;
-  -moz-border-radius-topright: 8px;
-  -webkit-border-top-left-radius: 8px;
-  -webkit-border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  background: #6DA6E2 url(/sites/all/themes/merlin-theme/images/tabs.png) repeat-x;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  float: left;
+  padding: 5px 14px 5px 14px;
+  margin: 0 1px 0 0;
+  border: solid #6191C5 1px;
+  border-width: 1px 1px 0 1px;
+	background-position: 0% 0;
+	text-decoration: none;
 }
-#main-menu-links a:hover,
+#main-menu-links a:hover {
+  background-position: 0% -42px;
+  text-decoration: none;
+}
 #main-menu-links a:focus {
   background: #f6f6f2;
-  background: rgba(255, 255, 255, 0.95);
 }
 #main-menu-links a:active {
-  background: #b3b3b3;
-  background: rgba(255, 255, 255, 1);
+  background-position: 0% -84px;
+  background: #fff;
+  border-bottom-color: #fff;
 }
 #main-menu-links li a.active {
   border-bottom: none;
+  color: #6DA6E2;
 }
 .featured #main-menu-links li a:active,
 .featured #main-menu-links li a.active {
