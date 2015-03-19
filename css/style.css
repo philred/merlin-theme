@@ -235,8 +235,6 @@ tr.odd {
 }
 tr,
 tr.even {
-  background: #efefef;
-  background: rgba(0, 0, 0, 0.063);
 }
 table ul.links {
   margin: 0;
