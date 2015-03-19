@@ -347,6 +347,7 @@ h1#site-name {
   float: left; /* LTR */
   margin: 0 10px;
   padding: 0;
+	border-bottom: 1px solid black;
 }
 .region-header .block .content {
   margin: 0;
@@ -486,7 +487,6 @@ h1#site-name {
   font-size: 0.929em;
   margin: 0;
   padding: 0 15px;
-	border-bottom: 1px solid #2763A5;
 	color: #6DA6E2;
 }
 #main-menu-links li {
