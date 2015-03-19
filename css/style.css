@@ -11,18 +11,21 @@ body {
   outline: 0;
 }
 a:link {
-  color: #607890;
+  color: #2763a5;
+	text-decoration: none;
 }
 a:visited {
-  color: #607890;
+  color: #2763a5;
 }
 a:hover {
-  color: #036;
+  color: #6191c5;
+	text-decoration: underline;
 }
 a:active {
-  color: #036;
+  color: #6191c5;
 }
 a:focus {
+  color: #6191c5;
   text-decoration: underline;
 }
 h1 {
@@ -486,6 +489,7 @@ h1#site-name {
   margin: 0;
   padding: 0 15px;
 	color: #6DA6E2;
+	border-bottom: 1px solid #2763a5;
 }
 #main-menu-links li {
   float: right; /* LTR */
