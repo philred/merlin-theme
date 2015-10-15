@@ -3,7 +3,7 @@
 
 body,
 body.overlay {
-  color: #3b3b3b;
+  color: #333;
 }
 .comment .comment-arrow {
   border-color: #ffffff;
@@ -22,31 +22,31 @@ body.overlay {
   border-bottom: 1px solid #ffffff;
 }
 #header {
-  background-color: #48a9e4;
-  background-image: -moz-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
-  background-image: -ms-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
-  background-image: -o-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0779bf), color-stop(1, #48a9e4));
-  background-image: -webkit-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
-  background-image: linear-gradient(top, #0779bf 0%, #48a9e4 100%);
+  background-color: #fffff0;
+  background-image: -moz-linear-gradient(top, #fffff0 0%, #fffff0 100%);
+  background-image: -ms-linear-gradient(top, #fffff0 0%, #fffff0 100%);
+  background-image: -o-linear-gradient(top, #fffff0 0%, #fffff0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fffff0), color-stop(1, #fffff0));
+  background-image: -webkit-linear-gradient(top, #fffff0 0%, #fffff0 100%);
+  background-image: linear-gradient(top, #fffff0 0%, #fffff0 100%);
 }
 a {
-  color: #0071B3;
+  color: #6090c5;
 }
 a:hover,
 a:focus {
-  color: #036;
+  color: #0640ac;
 }
 a:active {
-  color: #23aeff;
+  color: #74b4f9;
 }
 .sidebar .block {
-  background-color: #f6f6f2;
-  border-color: #f9f9f9;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 #page-wrapper,
 #footer-wrapper {
-  background: #292929;
+  background: #2763a5;
 }
 .region-header,
 .region-header a,
@@ -54,5 +54,5 @@ a:active {
 #name-and-slogan,
 #name-and-slogan a,
 #secondary-menu-links li a {
-  color: #fffeff;
+  color: #333;
 }
