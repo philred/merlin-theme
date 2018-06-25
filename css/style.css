@@ -10,49 +10,23 @@ body {
   border: 0;
   outline: 0;
 }
-a:link {
-  color: #2763a5;
-	text-decoration: none;
-}
+a:link,
 a:visited {
-  color: #2763a5;
+  text-decoration: none;
 }
-a:hover {
-  color: #6191c5;
-	text-decoration: underline;
-}
-a:active {
-  color: #6191c5;
-}
+a:hover,
+a:active,
 a:focus {
-  color: #6191c5;
   text-decoration: underline;
 }
-h1 {
-  color: #1f3f5e;
-  font-family: Georgia,Times,"Times New Roman",serif;
-  font-size: 182%;
-  text-align: left;
-}
-h2 {
-  color: #1f3f5e;
-  font-family: Georgia,Times,"Times New Roman",serif;
-  font-size: 123.1%;
-  text-align: left;
-}
-h3 {
-  font-size: 116%;		
-}
-h4 {
-  font-size: 108%;		
-}
-h5 {
-  font-size: 100%;		
-}
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
   margin: 1.0em 0 0.5em;
   font-weight: inherit;
-  font-family: Georgia,Times,"Times New Roman",serif;
 }
 h1 {
   font-size: 1.357em;
@@ -79,8 +53,8 @@ kbd,
 samp,
 var {
   padding: 0 0.4em;
-  font-size: 0.77em;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 0.857em;
+  font-family: Menlo, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New";
 }
 code {
   background-color: #f2f2f2;
@@ -132,7 +106,7 @@ body,
 #site-slogan,
 .ui-widget,
 .comment-form label {
-  font: 16px/1.22 Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif; 
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 #header,
 #footer-wrapper,
@@ -147,13 +121,13 @@ div.meta,
 p.comment-time,
 table,
 .breadcrumb {
-  font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif; 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 input,
 textarea,
 select,
 a.button {
-  font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
 }
 
 /* ------------------ Reset Styles ------------------ */
@@ -233,11 +207,13 @@ tr th {
   border-color: rgba(255, 255, 255, 0.18);
 }
 tr.odd {
-  background: #e4e4e4;
-  background: rgba(0, 0, 0, 0.105);
+  /* background: #e4e4e4; */
+  /* background: rgba(0, 0, 0, 0.105); */
 }
 tr,
 tr.even {
+  /* background: #efefef; */
+  /* background: rgba(0, 0, 0, 0.063); */
 }
 table ul.links {
   margin: 0;
@@ -348,7 +324,6 @@ h1#site-name {
   float: left; /* LTR */
   margin: 0 10px;
   padding: 0;
-	border-bottom: 1px solid black;
 }
 .region-header .block .content {
   margin: 0;
@@ -488,8 +463,7 @@ h1#site-name {
   font-size: 0.929em;
   margin: 0;
   padding: 0 15px;
-	color: #6DA6E2;
-	border-bottom: 1px solid #2763a5;
+  color: #6da6e2;
 }
 #main-menu-links li {
   float: right; /* LTR */
@@ -498,33 +472,39 @@ h1#site-name {
   margin: 0 1px;
 }
 #main-menu-links a {
-  background: #6DA6E2 url(/sites/all/themes/merlin-theme/images/tabs.png) repeat-x;
-  color: #fff;
-  font-weight: bold;
-  display: block;
-  float: left;
-  padding: 5px 14px 5px 14px;
-  margin: 0 1px 0 0;
-  border: solid #6191C5 1px;
-  border-width: 1px 1px 0 1px;
-	background-position: 0% 0;
-	text-decoration: none;
-}
-#main-menu-links a:hover {
-  background-position: 0% -42px;
+  color: #fffff0;
+  background: #3a75b6;
+  float: left; /* LTR */
+  height: 2.4em;
+  line-height: 2.4em;
+  padding: 0 0.8em;
   text-decoration: none;
+  text-shadow: 0 1px #eee;
+  -khtml-border-radius-topleft: 8px;
+  -khtml-border-radius-topright: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid #3a75b6;
 }
+#main-menu-links a:hover,
 #main-menu-links a:focus {
-  background: #6DA6E2;
+  /* background: #74ade7; */
+  /* background: rgba(255, 255, 255, 0.95); */
+  color: #3a75b6;
+  background: #ffffff;
+  border-bottom: none;
 }
 #main-menu-links a:active {
-  background-position: 0% -84px;
-  background: #fff;
-  border-bottom-color: #fff;
+  background: #b3b3b3;
+  background: rgba(255, 255, 255, 1);
 }
 #main-menu-links li a.active {
+  color: #3a75b6;
   border-bottom: none;
-  color: #6DA6E2;
 }
 .featured #main-menu-links li a:active,
 .featured #main-menu-links li a.active {
@@ -536,7 +516,7 @@ h1#site-name {
 
 #secondary-menu-links {
   float: right; /* LTR */
-  font-size: 16px;
+  font-size: 0.929em;
   margin: 10px 10px 0;
 }
 #secondary-menu-links a:hover,
@@ -604,7 +584,7 @@ h1#page-title {
   line-height: 1.4;
 }
 .node .content {
-  font-size: 100%;
+  font-size: 1.071em;
 }
 .node-teaser .content {
   font-size: 1em;
@@ -729,7 +709,6 @@ ul.links {
 }
 .comment .submitted .comment-permalink {
   font-size: 0.786em;
-  text-transform: lowercase;
 }
 .comment .content {
   font-size: 0.929em;
@@ -977,7 +956,7 @@ ul.links {
 /* --------------- System Tabs  --------------- */
 
 .tabs {
-  font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif; 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
 }
 .tabs ul.primary {
@@ -1200,7 +1179,7 @@ fieldset legend {
   display: block;
   height: 2em;
   left: -1px; /* LTR */
-  font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
   line-height: 2;
   padding: 0;
   position: absolute;
@@ -1351,14 +1330,6 @@ input.form-button-disabled:active,
   color: #717171;
 }
 
-/* Animated throbber */
-html.js input.form-autocomplete {
-  background-position: 100% 4px; /* LTR */
-}
-html.js input.throbbing {
-  background-position: 100% -16px; /* LTR */
-}
-
 /* Comment form */
 .comment-form label {
   float: left; /* LTR */
@@ -1478,19 +1449,6 @@ div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
   height: 1.143em;
   margin-right: 5px;
   width: 9em;
-}
-#search-block-form input.form-submit,
-#search-form input.form-submit {
-  margin-left: 0;
-  margin-right: 0;
-  height: 25px;
-  width: 34px;
-  padding: 0;
-  cursor: pointer;
-  text-indent: -9999px;
-  border-color: #e4e4e4 #d2d2d2 #b4b4b4;
-  background: url(../images/search-button.png) no-repeat center top;
-  overflow: hidden;
 }
 #search-block-form input.form-submit:hover,
 #search-block-form input.form-submit:focus,
